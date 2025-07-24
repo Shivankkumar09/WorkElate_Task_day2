@@ -100,9 +100,9 @@ npm run dev
 
 ## 📌 Future Improvements
 
-- ⬜ Add filters, search, priority  
-- ⬜ Add auth and user-specific tasks  
-- ✅ Auto-save implemented  
+- ⬜ Add filters, search, priority 
+- ⬜ Add backend Routes for edit and delete tasks   
+- ⬜ Add auth and user-specific tasks   
 - ⬜ Better mobile support
 
 ---
