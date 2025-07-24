@@ -44,11 +44,15 @@ export const TaskProvider = ({ children }) => {
   };
 
   // ✅ Local-only Edit
-  const editTask = (updatedTask) => {
-    setTasks(tasks.map((t) =>
-      t.id === updatedTask.id || t._id === updatedTask._id ? updatedTask : t
-    ));
-  };
+const editTask = (updatedTask) => {
+  setTasks((prevTasks) =>
+    prevTasks.map((task) =>
+      task.id === updatedTask.id || task._id === updatedTask.id
+        ? { ...task, ...updatedTask }
+        : task
+    )
+  );
+};
 
   return (
     <TaskContext.Provider value={{ tasks, addTask, deleteTask, editTask }}>

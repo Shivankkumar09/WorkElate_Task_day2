@@ -11,7 +11,8 @@ const App = () => {
   const allTags = [...new Set(tasks.flatMap(task => task.tags || []))];
 
   const handleEdit = (task) => {
-    setTaskToEdit(task);
+    const normalizedTask = { ...task, id: task.id || task._id };
+    setTaskToEdit(normalizedTask);
     setShowModal(true);
   };
 
