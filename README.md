@@ -1,6 +1,6 @@
-# 📝 TaskNetic - Task Manager App
+# 📝  Task Manager App
 
-TaskNetic is a full-stack task management app built with **React**, **Context API**, **Tailwind CSS**, **Node.js**, and **MongoDB**. It allows users to create, edit, and manage tasks with auto-save support and tags.
+It is a full-stack task management app built with **React**, **Context API**, **Tailwind CSS**, **Node.js**, and **MongoDB**. It allows users to create, edit(locally), and manage tasks with auto-save support and tags.
 
 ---
 
@@ -13,7 +13,7 @@ TaskNetic is a full-stack task management app built with **React**, **Context AP
 
 ## ✨ Features
 
-- Create and edit tasks with title, description, and tags  
+- Create and edit tasks with title, description, and tags (edit and deletion Loaclly) 
 - Auto-save form data (title, description, tags) to localStorage every 5 seconds  
 - Tasks displayed in reverse chronological order  
 - Responsive and modern UI  
@@ -82,7 +82,7 @@ Request body:
 
 ```bash
 # Clone project
-git clone https://github.com/yourusername/tasknetic.git
+git clone https://github.com/Shivankkumar09/WorkElate_Task_day2.git
 
 # Backend setup
 cd backend
